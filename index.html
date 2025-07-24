@@ -3,26 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AR Tata Surya - Bumi</title>
+    <title>AR Tata Surya</title>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs="patternRatio:0.80">
-      
-      <!-- Marker untuk Earth -->
-      <a-marker type="pattern" url="asset/patt/mars.patt">
-        <!-- Model 3D earth.glb muncul di atas marker -->
-        <a-entity 
-          gltf-model="asset/glb/mars.glb" 
-          scale="0.5 0.5 0.5" 
-          position="0 0 0" 
-          rotation="0 0 0"
-          animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
-        </a-entity>
+
+      <!-- Merkurius -->
+      <a-marker type="pattern" url="asset/patt/merkurius.patt">
+        <a-entity gltf-model="asset/glb/merkurius.glb" scale="0.3 0.3 0.3" position="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 12000"></a-entity>
       </a-marker>
 
-      <!-- Kamera AR -->
+      <!-- Venus -->
+      <a-marker type="pattern" url="asset/patt/venus.patt">
+        <a-entity gltf-model="asset/glb/venus.glb" scale="0.35 0.35 0.35" position="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 13000"></a-entity>
+      </a-marker>
+
+      <!-- Bumi -->
+      <a-marker type="pattern" url="asset/patt/bumi.patt">
+        <a-entity gltf-model="asset/glb/bumi.glb" scale="0.5 0.5 0.5" position="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+      </a-marker>
+
+      <!-- Mars -->
+      <a-marker type="pattern" url="asset/patt/mars.patt">
+        <a-entity gltf-model="asset/glb/mars.glb" scale="0.4 0.4 0.4" position="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 11000"></a-entity>
+      </a-marker>
+
+      <!-- Jupiter -->
+      <a-marker type="pattern" url="asset/patt/jupiter.patt">
+        <a-entity gltf-model="asset/glb/jupiter.glb" scale="0.8 0.8 0.8" position="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 16000"></a-entity>
+      </a-marker>
+
+      <!-- Saturnus -->
+      <a-marker type="pattern" url="asset/patt/saturnus.patt">
+        <a-entity gltf-model="asset/glb/saturnus.glb" scale="0.75 0.75 0.75" position="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 15000"></a-entity>
+      </a-marker>
+
+      <!-- Uranus -->
+      <a-marker type="pattern" url="asset/patt/uranus.patt">
+        <a-entity gltf-model="asset/glb/uranus.glb" scale="0.6 0.6 0.6" position="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 14000"></a-entity>
+      </a-marker>
+
+      <!-- Neptunus -->
+      <a-marker type="pattern" url="asset/patt/neptunus.patt">
+        <a-entity gltf-model="asset/glb/neptunus.glb" scale="0.6 0.6 0.6" position="0 0 0"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 14000"></a-entity>
+      </a-marker>
+
+      <!-- Kamera -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
